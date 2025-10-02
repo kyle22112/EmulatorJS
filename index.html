@@ -8,34 +8,13 @@
   </head>
   <body>
     <script>
-      <!DOCTYPE html>
-<html>
-<head>
-<title>Protected Page</title>
-<script>
-    function checkPassword() {
-        var password = "banana1254"; // Replace with your desired password
-        var enteredPassword = prompt("Please enter the password to access this page:");
-
-        if (enteredPassword === password) {
-            alert("Password correct! Welcome.");
-            // You can redirect to another page or reveal content here
-            document.getElementById("protectedContent").style.display = "block";
-        } else {
-            alert("Incorrect password. Access denied.");
-            window.location.href = "unauthorized.html"; // Redirect if password is wrong
-        }
-    }
-</script>
-</head>
-<body onload="checkPassword()">
-
-<div id="protectedContent" style="display:none;">
-    <h1>Welcome to the protected area!</h1>
-    <p>This content is only visible after entering the correct password.</p>
-</div>
-
-</body>
+      const pass = 'banana459';
+      let enteredPass = input('Enter the password to continue. ');
+      while (enteredPass != pass) {
+        enteredPass = input('Incorrect. Please enter the password to continue. ');
+      }
+      window.location.href = 'main.html';
+  </body>
 </html>
     </script>
   </body>
